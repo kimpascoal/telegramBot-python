@@ -104,6 +104,11 @@ def handler_text(message):
     bot.send_photo(chat_id, mebot)
     bot.send_message(message.chat.id, message2)
 
+@bot.message_handler(commands=['time'])
+def handler_text(message):
+    bot.send_photo(chat_id, mebot)
+    bot.send_message(message.chat.id, message2)
+
 
 @bot.message_handler(content_types=['text'])
 def handler_text(message):
